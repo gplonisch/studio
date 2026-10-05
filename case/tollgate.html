@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tollgate Cycles - Plonisch Studio</title>
+<meta name="description" content="A case study on designing a site that has to sell a four-month wait for a hand-built bicycle frame.">
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="shell">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="../index.html">Plonisch Studio</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../process.html">How it works</a></li>
+        <li><a href="../process.html#plans">Care plans</a></li>
+        <li><a href="../index.html#start">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="shell shell--narrow">
+    <p class="work__kind">Maker and retail</p>
+    <h1 style="font-size:var(--step-4); margin-top:var(--space-2);">Selling a four-month wait</h1>
+
+    <dl class="case__meta">
+      <div><dt>Type</dt><dd>Made-to-measure frame builder</dd></div>
+      <div><dt>Palette</dt><dd>Cobalt on cream</dd></div>
+      <div><dt>Pages</dt><dd>Three</dd></div>
+      <div><dt>Status</dt><dd>Self-directed demo</dd></div>
+    </dl>
+
+    <div class="case__body">
+      <h2>The brief I set myself</h2>
+      <p>A one-person frame builder who makes twelve bicycles a year. Every frame is drawn around a two-hour fitting and takes about sixteen weeks. The site has one job, which is to make a four-month wait sound like the point rather than the problem.</p>
+
+      <h2>The decision that shaped it</h2>
+      <p>Craft businesses attract a particular kind of website: warm cream background, brass accent, a serif that implies heritage, and photographs of hands. It is the default any time a brief mentions the word artisan, and because it is the default it says nothing about this builder specifically.</p>
+      <p>So the palette is cobalt on cream, and the type is a system sans rather than a display serif. The craft reads through specificity instead: the tubing is named, the brazing method is named, the price basis is named. A customer spending four months waiting wants facts, and facts are more persuasive than atmosphere.</p>
+
+      <h2>What I left out</h2>
+      <ul>
+        <li>No testimonials. Not an oversight. Fabricated reviews are illegal under the FTC's 2024 rule, and a testimonial slot in a new build is an invitation to fill it with something invented.</li>
+        <li>No prices on the page. The frame is quoted after a fitting, and publishing a number that always turns out wrong is worse than publishing none.</li>
+        <li>No stock counter. "Three slots left" is a pressure tactic, and on a business that genuinely has a waiting list it is also redundant.</li>
+      </ul>
+
+      <h2>What the checks caught</h2>
+      <p>Three real faults in my own work, none of which I would have found by looking at the page:</p>
+      <ul>
+        <li>One colour token was doing two jobs, hairline dividers and input borders. Dividers have no contrast floor; a border that identifies a control needs 3:1 under WCAG 1.4.11. It was sitting at 1.62:1. The fix was to split the token in two.</li>
+        <li>The same token failed again at 1.88:1 in dark mode, which I would have missed entirely because I was working in light.</li>
+        <li>The footer headings were marked up as level four directly after a level two, which breaks the document outline for anyone navigating by headings.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>This is the argument for the linter.</strong></p>
+        <p>None of those three are things a designer catches by eye, and all three are things a demand letter cites. Running the checks is cheaper than noticing.</p>
+      </div>
+
+      <h2>What I would do differently</h2>
+      <p>The photography is placeholder, loaded from a third-party service, which means a visitor's IP address goes somewhere it does not need to. On a real build the images are self-hosted and that request disappears. I left it in and disclosed it in the privacy notice rather than quietly ignoring it.</p>
+      <div class="hero__actions" style="margin-top:var(--space-4);">
+        <a class="btn btn--primary" href="https://gplonisch.github.io/static-studio/demo/">See it live</a>
+        <a class="btn btn--ghost" href="../index.html#start">Start a project</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <p class="footer__legal">
+      Tollgate Cycles is not a real company. This case study describes a self-directed build, not client work.
+      [BUSINESS NAME], [CONTACT EMAIL].
+    </p>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>

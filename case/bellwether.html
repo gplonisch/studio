@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bellwether - Plonisch Studio</title>
+<meta name="description" content="A case study on building a restaurant site around a hand-managed booking process rather than a reservation platform.">
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="shell">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="../index.html">Plonisch Studio</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../process.html">How it works</a></li>
+        <li><a href="../process.html#plans">Care plans</a></li>
+        <li><a href="../index.html#start">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="shell shell--narrow">
+    <p class="work__kind">Food and drink</p>
+    <h1 style="font-size:var(--step-4); margin-top:var(--space-2);">A restaurant that answers its own email</h1>
+
+    <dl class="case__meta">
+      <div><dt>Type</dt><dd>Thirty-cover neighbourhood restaurant</dd></div>
+      <div><dt>Palette</dt><dd>Amber on olive</dd></div>
+      <div><dt>Pages</dt><dd>Two</dd></div>
+      <div><dt>Status</dt><dd>Self-directed demo</dd></div>
+    </dl>
+
+    <div class="case__body">
+      <h2>The brief I set myself</h2>
+      <p>Thirty covers, open five days, a menu that changes with the market most weeks. No reservation platform, because at this size the booking fees cost more than the problem they solve and the owner would rather reply personally.</p>
+
+      <h2>The decision that shaped it</h2>
+      <p>This is the only one of the three builds that commits to a single colour scheme instead of following the visitor's system setting. A dining room is dim. A restaurant site that flips to bright white because somebody's phone is in light mode is not expressing a brand, it is expressing a default.</p>
+      <p>So the whole palette is stated once, explicitly, and it is deep olive rather than the warm beige that arrives unbidden on every food brief. The amber is the only bright thing on the page and it marks only the menu headings and the things you can click.</p>
+
+      <h2>The menu was the real design problem</h2>
+      <p>Most restaurant sites either put the menu in a PDF, which is unreadable on a phone and invisible to search, or build it as a table, which collapses badly at narrow widths. Here each dish is a flex row with a dotted leader between the name and the price, so it reflows to any width and reads as a menu rather than a spreadsheet.</p>
+      <p>It is also plain HTML the owner can edit. Changing a price means changing a number in a file, not logging into a content system that will want updating in two years.</p>
+
+      <h2>The allergy field is a privacy decision</h2>
+      <p>A booking form with a notes box on a restaurant site will collect health information, because that is where people type their allergies. That makes it a more sensitive field than the rest of the form, so the privacy notice says specifically what happens to it: the kitchen reads it, it is used for the booking, and it is not kept afterwards.</p>
+      <div class="callout">
+        <p><strong>Most small-business privacy policies are copied from a generator.</strong></p>
+        <p>Which means they describe cookies the site does not set and omit the one genuinely sensitive thing the form actually collects. Writing it against the real form takes twenty minutes and is the difference between a document and a decoration.</p>
+      </div>
+
+      <h2>What I would do differently</h2>
+      <p>The hours are hard-coded. For a restaurant that closes for two weeks in August, the honest answer is a single file the owner edits, which is what a care plan is for, rather than pretending a static page maintains itself.</p>
+      <div class="hero__actions" style="margin-top:var(--space-4);">
+        <a class="btn btn--primary" href="../work/bellwether/">See it live</a>
+        <a class="btn btn--ghost" href="../index.html#start">Start a project</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <p class="footer__legal">
+      Bellwether is not a real restaurant. This case study describes a self-directed build, not client work.
+      [BUSINESS NAME], [CONTACT EMAIL].
+    </p>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>

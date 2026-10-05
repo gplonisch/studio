@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hartline Electrical - domestic electrician</title>
+<meta name="description" content="A demonstration site for a fictional local electrician, built to show how a trades business can present services, credentials and a quote request without a lead-generation platform.">
+<link rel="stylesheet" href="../../css/base.css">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="shell">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">Hartline Electrical</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#work">What we do</a></li>
+        <li><a href="#area">Where we go</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#quote">Get a quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="shell">
+    <div class="hero">
+      <div class="hero__copy">
+        <h1>An electrician who turns up when they said.</h1>
+        <p>Domestic and small commercial work across the north of the city. Fixed quotes before anything starts.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#quote">Get a quote</a>
+          <a class="btn btn--ghost" href="tel:+15550000000">Call 555 0100</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="https://picsum.photos/seed/hartline-consumer-unit-install/900/1125"
+             width="900" height="1125"
+             alt="An electrician fitting a new consumer unit, circuit labels written out on the cover."
+             fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="shell">
+      <div class="callout-bar">
+        <p>No power, burning smell, or water near electrics? That is an emergency, not a quote.</p>
+        <a href="tel:+15550000000">Call 555 0100, any hour</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="shell">
+      <h2 style="margin-bottom:var(--space-6);">What we do</h2>
+      <div class="services">
+        <div class="service">
+          <div class="service__rule" aria-hidden="true"></div>
+          <h3>Consumer units</h3>
+          <p>Replacing old fuse boxes with an RCBO board, every circuit tested and labelled, certificate issued the same day.</p>
+        </div>
+        <div class="service">
+          <div class="service__rule" aria-hidden="true"></div>
+          <h3>Rewires</h3>
+          <p>Full and partial. We work room by room so you keep power somewhere in the house throughout.</p>
+        </div>
+        <div class="service">
+          <div class="service__rule" aria-hidden="true"></div>
+          <h3>Inspection reports</h3>
+          <p>EICRs for landlords and for sales. Faults are explained in writing in plain language, with what is urgent and what is not.</p>
+        </div>
+        <div class="service">
+          <div class="service__rule" aria-hidden="true"></div>
+          <h3>Car chargers</h3>
+          <p>Supply checked first. If your incoming supply will not carry a 7kW charger we will say so before you buy one.</p>
+        </div>
+        <div class="service">
+          <div class="service__rule" aria-hidden="true"></div>
+          <h3>Lighting and sockets</h3>
+          <p>Extra sockets, outside lights, garden and garage supplies. Small jobs are welcome and are quoted the same way.</p>
+        </div>
+        <div class="service">
+          <div class="service__rule" aria-hidden="true"></div>
+          <h3>Faults</h3>
+          <p>Tripping circuits, dead rings, intermittent lights. Charged by the hour because nobody can quote a fault they have not seen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="shell">
+      <div class="row row--reverse">
+        <div class="row__text">
+          <h2>A fixed price, or an honest hourly rate</h2>
+          <p>Anything we can specify gets a fixed quote in writing before work starts, and that is the price you pay. If the wall opens up and something behind it has changed the job, we stop and re-quote rather than adding it to the bill.</p>
+          <p>Fault-finding is the exception and is charged by the hour, because the only way to quote a fault is to find it first. We tell you the rate before we come out.</p>
+        </div>
+        <img src="https://picsum.photos/seed/hartline-testing-multifunction-tester/800/640"
+             width="800" height="640"
+             alt="A multifunction tester connected to a socket outlet during a circuit test." loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="area">
+    <div class="shell">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-7); align-items:start;">
+        <div style="display:grid; gap:var(--space-4);">
+          <h2>Where we go</h2>
+          <p style="color:var(--ink-2);">Anywhere inside the ring road, plus the villages north of it. Beyond that we will still come out, but travel is added to the quote and we will tell you what it is before you agree.</p>
+          <p style="color:var(--ink-2);">One van, one electrician. That is why the diary is usually a week out and why you get the same person who quoted the job.</p>
+        </div>
+        <div id="credentials">
+          <h2 style="margin-bottom:var(--space-5);">Credentials</h2>
+          <dl class="creds">
+            <div><dt>Registered competent person</dt><dd>[SCHEME + NUMBER]</dd></div>
+            <div><dt>Public liability insurance</dt><dd>[INSURER + COVER]</dd></div>
+            <div><dt>Current wiring regulations</dt><dd>[QUALIFICATION + YEAR]</dd></div>
+            <div><dt>Inspection and testing</dt><dd>[QUALIFICATION + YEAR]</dd></div>
+          </dl>
+          <p class="note" style="margin-top:var(--space-5);">
+            These are placeholders. A real build carries the actual scheme numbers, because a
+            homeowner can and should check them before letting anyone touch a consumer unit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="quote">
+    <div class="shell">
+      <div style="display:grid; gap:var(--space-6); max-width:var(--shell-narrow);">
+        <div style="display:grid; gap:var(--space-4);">
+          <h2>Get a quote</h2>
+          <p>Tell us what the job is and roughly when. We reply within one working day with either a price or the questions we need answered to give you one.</p>
+        </div>
+
+        <form class="form" id="quote-form" data-validate novalidate
+              data-sent-message="This is a demonstration page with no server attached, so nothing was sent. A real build wires this to the electrician's inbox or their job management software.">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="field__error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4);">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint">
+              <p class="field__hint" id="email-hint">Used only to reply to this enquiry.</p>
+              <p class="field__error" id="email-error" hidden>Please enter a valid email address.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+              <p class="field__hint">Optional. Quicker for anything urgent.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" name="postcode" autocomplete="postal-code" required
+                   aria-describedby="postcode-hint">
+            <p class="field__hint" id="postcode-hint">So we can tell you straight away whether travel is added.</p>
+            <p class="field__error" id="postcode-error" hidden>Please enter a postcode.</p>
+          </div>
+          <div class="field">
+            <label for="job">What needs doing</label>
+            <textarea id="job" name="job" rows="5" required></textarea>
+            <p class="field__hint">Photographs help more than descriptions. You can send them once we reply.</p>
+            <p class="field__error" id="job-error" hidden>Please describe the job.</p>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent" style="font-weight:400; color:var(--ink-2);">
+              I agree that Hartline Electrical may store these details in order to reply and to quote.
+              See the <a href="privacy.html">privacy notice</a>.
+            </label>
+          </div>
+          <p class="field__error" id="consent-error" hidden>Please confirm before sending.</p>
+          <div><button class="btn btn--primary" type="submit">Send enquiry</button></div>
+          <p role="status" id="form-status" class="field__hint"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <h2 class="footer__heading">Hartline Electrical</h2>
+        <p style="color:var(--ink-2); font-size:var(--step--1);">
+          Domestic and small commercial electrical work. A fictional business, used to demonstrate a build.
+        </p>
+      </div>
+      <div>
+        <h2 class="footer__heading">Pages</h2>
+        <ul>
+          <li><a href="#work">What we do</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#quote">Get a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__heading">Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy notice</a></li>
+          <li><a href="../../index.html">Built by Plonisch Studio</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">
+      Hartline Electrical is not a real company. This page is a demonstration built by
+      <a href="../../index.html">Plonisch Studio</a>. The credentials shown are placeholders and
+      no real registration, insurance or qualification is claimed.
+    </p>
+  </div>
+</footer>
+
+<script src="../../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* Design tokens.
+ *
+ * One accent, one neutral ramp, one radius scale, one type scale. Every value
+ * a component uses comes from here, which is what makes a site retheme in one
+ * file instead of thirty.
+ *
+ * Contrast pairs are verified by scripts/check.mjs against WCAG 2.1 AA. If a
+ * value below changes, CI recomputes the ratios and fails on a regression, so
+ * the palette cannot drift out of compliance quietly.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Near-monochrome with one warm accent. The work on this site is colourful,
+     so the site around it is not: paper, ink, and a single rust that only ever
+     marks something you can act on. Deliberately a different family from the
+     cobalt-on-cream demo, because a studio whose own site looks identical to
+     its portfolio piece has shown you one idea, not two. */
+  --paper:       #fcfbf9;
+  --surface:     #ffffff;
+  --surface-alt: #f3f1ec;
+  --line:        #e4e1d9;   /* decorative hairlines, no contrast floor */
+  --line-strong: #cfcbbf;   /* heavier dividers, still decorative */
+  --control-border: #857f6f; /* input and ghost-button edges, >= 3:1 */
+
+  --ink:    #16181d;
+  --ink-2:  #454a55;
+  --ink-3:  #646a77;
+
+  --accent:      #b4472b;
+  --accent-hover:#9c3a1f;
+  --accent-ink:  #ffffff;
+  --accent-soft: #f8ece7;
+
+  /* Type. A 1.25 scale, tightened at display sizes where loose tracking reads
+     as amateur, and a hard 68ch measure on body copy. */
+  --font-sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --step--1: clamp(0.83rem, 0.81rem + 0.1vw, 0.89rem);
+  --step-0:  clamp(1rem, 0.97rem + 0.15vw, 1.09rem);
+  --step-1:  clamp(1.25rem, 1.19rem + 0.3vw, 1.42rem);
+  --step-2:  clamp(1.56rem, 1.45rem + 0.55vw, 1.94rem);
+  --step-3:  clamp(1.95rem, 1.75rem + 1vw, 2.75rem);
+  --step-4:  clamp(2.44rem, 2.05rem + 1.95vw, 4rem);
+  --step-5:  clamp(3.05rem, 2.35rem + 3.5vw, 5.5rem);
+
+  --measure: 68ch;
+  --tracking-display: -0.025em;
+  --tracking-tight:   -0.012em;
+
+  /* Space. A single 4px-derived ramp. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* Shape. One documented rule: interactive elements are pill, containers are
+     10px, media is 4px. Mixing radii without a rule is the most visible sign
+     that a page was assembled rather than designed. */
+  --radius-interactive: 999px;
+  --radius-container:   10px;
+  --radius-media:       4px;
+
+  --shell: 1160px;
+  --shell-narrow: 760px;
+
+  /* Shadows are tinted to the paper hue, never pure black. */
+  --shadow-1: 0 1px 2px rgb(32 28 20 / 0.05);
+  --shadow-2: 0 12px 32px -12px rgb(32 28 20 / 0.16);
+
+  --focus-ring: 2px solid var(--accent);
+  --focus-offset: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
+    --paper:       #141311;
+    --surface:     #1c1a18;
+    --surface-alt: #232119;
+    --line:        #312e29;
+    --line-strong: #46423a;
+    --control-border: #6f6a5e;
+
+    --ink:    #f3f2ee;
+    --ink-2:  #bdc1c9;
+    --ink-3:  #949aa5;
+
+    --accent:      #e8734f;
+    --accent-hover:#f08a63;
+    --accent-ink:  #14110f;
+    --accent-soft: #2a211c;
+
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-2: 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --paper:       #141311;
+  --surface:     #1c1a18;
+  --surface-alt: #232119;
+  --line:        #312e29;
+  --line-strong: #46423a;
+  --control-border: #6f6a5e;
+
+  --ink:    #f3f2ee;
+  --ink-2:  #bdc1c9;
+  --ink-3:  #949aa5;
+
+  --accent:      #e8734f;
+  --accent-hover:#f08a63;
+  --accent-ink:  #14110f;
+  --accent-soft: #2a211c;
+
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-2: 0 12px 32px -12px rgb(0 0 0 / 0.6);
+}

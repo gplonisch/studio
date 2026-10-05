@@ -1,0 +1,83 @@
+/* Bellwether. A neighbourhood restaurant.
+ *
+ * Committed to a single dark treatment rather than following the system
+ * preference. A dining room is dim; a restaurant site that flips to bright
+ * white at breakfast is not expressing a brand, it is expressing a default.
+ * The whole palette is therefore stated once, explicitly, on :root.
+ *
+ * Deep olive ground, bone text, one soft amber. Nothing here is the
+ * beige-and-brass palette that arrives unbidden on every "artisan food" brief.
+ */
+
+:root {
+  color-scheme: dark;
+
+  --paper:       #15180f;
+  --surface:     #1c2014;
+  --surface-alt: #22271a;
+  --line:        #333a27;
+  --line-strong: #434b33;
+  --control-border: #7d8768;
+
+  --ink:    #f3f1e6;
+  --ink-2:  #c7c7b4;
+  --ink-3:  #a0a48c;
+
+  --accent:      #e8b04b;
+  --accent-hover:#f2c268;
+  --accent-ink:  #1a1d10;
+  --accent-soft: #2b3019;
+
+  --font-sans: ui-sans-serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --step--1: clamp(0.83rem, 0.81rem + 0.1vw, 0.89rem);
+  --step-0:  clamp(1rem, 0.97rem + 0.15vw, 1.09rem);
+  --step-1:  clamp(1.25rem, 1.19rem + 0.3vw, 1.42rem);
+  --step-2:  clamp(1.56rem, 1.45rem + 0.55vw, 1.94rem);
+  --step-3:  clamp(1.95rem, 1.75rem + 1vw, 2.75rem);
+  --step-4:  clamp(2.44rem, 2.05rem + 1.95vw, 4rem);
+  --step-5:  clamp(3.05rem, 2.35rem + 3.5vw, 5.5rem);
+
+  --measure: 66ch;
+  --tracking-display: -0.025em;
+  --tracking-tight:   -0.012em;
+
+  --space-1: 0.25rem; --space-2: 0.5rem;  --space-3: 0.75rem;
+  --space-4: 1rem;    --space-5: 1.5rem;  --space-6: 2rem;
+  --space-7: 3rem;    --space-8: 4.5rem;  --space-9: 7rem;
+
+  --radius-interactive: 999px;
+  --radius-container:   10px;
+  --radius-media:       4px;
+
+  --shell: 1120px;
+  --shell-narrow: 720px;
+
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-2: 0 14px 36px -14px rgb(0 0 0 / 0.65);
+
+  --focus-ring: 2px solid var(--accent);
+  --focus-offset: 3px;
+}
+
+/* Menu listing: price aligned right on a dotted leader, the one thing every
+   restaurant site needs and most get wrong by using a table. */
+.menu { display: grid; gap: var(--space-6); }
+.menu__group { display: grid; gap: var(--space-4); }
+.menu__group h3 { font-size: var(--step-0); letter-spacing: 0.02em; color: var(--accent); }
+.menu__item { display: grid; gap: var(--space-1); }
+.menu__line {
+  display: flex; align-items: baseline; gap: var(--space-3);
+  font-weight: 560;
+}
+.menu__line span:first-child { flex: 0 1 auto; }
+.menu__rule { flex: 1 1 auto; border-bottom: 1px dotted var(--line-strong); transform: translateY(-0.2em); }
+.menu__price { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.menu__item p { font-size: var(--step--1); color: var(--ink-3); }
+
+.hours { display: grid; gap: var(--space-2); font-variant-numeric: tabular-nums; }
+.hours div { display: flex; justify-content: space-between; gap: var(--space-5); max-width: 24rem; }
+.hours dt { color: var(--ink-2); }
+.hours dd { margin: 0; color: var(--ink); font-weight: 560; }

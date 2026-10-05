@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bellwether - a neighbourhood restaurant</title>
+<meta name="description" content="A demonstration site for a fictional neighbourhood restaurant, built to show how a small food business can present a menu, hours and bookings without a booking platform.">
+<link rel="stylesheet" href="../../css/base.css">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="shell">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="index.html">Bellwether</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#find">Find us</a></li>
+        <li><a href="#book">Book a table</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="shell">
+    <div class="hero">
+      <div class="hero__copy">
+        <h1>Small room, short menu, open late.</h1>
+        <p>Thirty covers on Kerr Street. The menu changes when the market does, which is most weeks.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#book">Book a table</a>
+          <a class="btn btn--ghost" href="#menu">See the menu</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="https://picsum.photos/seed/bellwether-dining-room-evening/900/1125"
+             width="900" height="1125"
+             alt="A narrow dining room at dusk, bar stools along one wall and pendant lights over the pass."
+             fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="menu">
+    <div class="shell">
+      <h2 style="margin-bottom:var(--space-6);">This week</h2>
+      <div class="menu" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:var(--space-7);">
+
+        <div class="menu__group">
+          <h3>To start</h3>
+          <div class="menu__item">
+            <p class="menu__line"><span>Bread and cultured butter</span><span class="menu__rule"></span><span class="menu__price">5</span></p>
+          </div>
+          <div class="menu__item">
+            <p class="menu__line"><span>Chicory, walnut, aged ewe's cheese</span><span class="menu__rule"></span><span class="menu__price">11</span></p>
+            <p>Bitter, sweet, salty. Order it first.</p>
+          </div>
+          <div class="menu__item">
+            <p class="menu__line"><span>Smoked trout, cucumber, dill oil</span><span class="menu__rule"></span><span class="menu__price">13</span></p>
+          </div>
+        </div>
+
+        <div class="menu__group">
+          <h3>Mains</h3>
+          <div class="menu__item">
+            <p class="menu__line"><span>Hogget shoulder, white beans, salsa verde</span><span class="menu__rule"></span><span class="menu__price">26</span></p>
+            <p>For two to share. Takes twenty minutes.</p>
+          </div>
+          <div class="menu__item">
+            <p class="menu__line"><span>Hake, brown shrimp, sea beet</span><span class="menu__rule"></span><span class="menu__price">24</span></p>
+          </div>
+          <div class="menu__item">
+            <p class="menu__line"><span>Barley, roast squash, sage</span><span class="menu__rule"></span><span class="menu__price">18</span></p>
+            <p>Vegan.</p>
+          </div>
+        </div>
+
+        <div class="menu__group">
+          <h3>After</h3>
+          <div class="menu__item">
+            <p class="menu__line"><span>Burnt honey custard</span><span class="menu__rule"></span><span class="menu__price">8</span></p>
+          </div>
+          <div class="menu__item">
+            <p class="menu__line"><span>Three cheeses, quince</span><span class="menu__rule"></span><span class="menu__price">12</span></p>
+          </div>
+        </div>
+
+      </div>
+      <p class="note" style="margin-top:var(--space-6);">
+        Tell us about allergies when you book and again when you arrive. The kitchen is small and
+        we handle nuts, gluten and shellfish in it, so we will be honest about what we cannot make safe.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="row">
+        <img src="https://picsum.photos/seed/bellwether-open-kitchen-pass/800/640"
+             width="800" height="640"
+             alt="Two cooks working at an open pass, plates lined up under a heat lamp." loading="lazy">
+        <div class="row__text">
+          <h2>One sitting, no rush</h2>
+          <p>Your table is yours for the evening. We would rather turn away a booking than turn a table twice, which is why we are small and why we are often full.</p>
+          <p>Walk-ins get the six seats at the bar, first come. They go early on Fridays and almost never on Tuesdays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="hours">
+    <div class="shell">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-7); align-items:start;">
+        <div>
+          <h2 style="margin-bottom:var(--space-5);">Hours</h2>
+          <dl class="hours">
+            <div><dt>Tuesday to Thursday</dt><dd>5.30pm to 10pm</dd></div>
+            <div><dt>Friday and Saturday</dt><dd>5.30pm to 11pm</dd></div>
+            <div><dt>Sunday</dt><dd>12pm to 4pm</dd></div>
+            <div><dt>Monday</dt><dd>Closed</dd></div>
+          </dl>
+        </div>
+        <div id="find">
+          <h2 style="margin-bottom:var(--space-5);">Find us</h2>
+          <p style="color:var(--ink-2);">
+            41 Kerr Street<br>
+            Two minutes from the station, the door with no sign on it.
+          </p>
+          <p style="margin-top:var(--space-4);">
+            <a href="tel:+15550000000">Call the room</a> between 3pm and 5pm if you need us the same day.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="book">
+    <div class="shell">
+      <div style="display:grid; gap:var(--space-6); max-width:var(--shell-narrow);">
+        <div style="display:grid; gap:var(--space-4);">
+          <h2>Book a table</h2>
+          <p>We take bookings by hand, so you will get a person replying rather than a confirmation screen. Usually within a few hours, always the same day.</p>
+        </div>
+
+        <form class="form" id="booking-form" data-validate novalidate
+                data-sent-message="This is a demonstration page with no server attached, so no booking was made. A real build wires this to the restaurant's inbox.">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="field__error" id="name-error" hidden>Please enter a name for the booking.</p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hint">
+            <p class="field__hint" id="email-hint">Used only to confirm this booking.</p>
+            <p class="field__error" id="email-error" hidden>Please enter a valid email address.</p>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4);">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+              <p class="field__error" id="date-error" hidden>Please choose a date.</p>
+            </div>
+            <div class="field">
+              <label for="people">People</label>
+              <input type="number" id="people" name="people" min="1" max="8" value="2" required>
+              <p class="field__hint">Eight is the largest table.</p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="notes">Allergies or anything we should know</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent" style="font-weight:400; color:var(--ink-2);">
+              I agree that Bellwether may store these details in order to confirm the booking.
+              See the <a href="privacy.html">privacy notice</a>.
+            </label>
+          </div>
+          <p class="field__error" id="consent-error" hidden>Please confirm before sending.</p>
+          <div><button class="btn btn--primary" type="submit" id="submit-btn">Request a table</button></div>
+          <p role="status" id="form-status" class="field__hint"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <h2 class="footer__heading">Bellwether</h2>
+        <p style="color:var(--ink-2); font-size:var(--step--1);">
+          41 Kerr Street. Open Tuesday to Sunday. A fictional restaurant, used to demonstrate a build.
+        </p>
+      </div>
+      <div>
+        <h2 class="footer__heading">Pages</h2>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#book">Book a table</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__heading">Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy notice</a></li>
+          <li><a href="../../index.html">Built by Plonisch Studio</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__legal">
+      Bellwether is not a real restaurant. This page is a demonstration built by
+      <a href="../../index.html">Plonisch Studio</a> and contains no real business, no real
+      reviews and no real prices.
+    </p>
+  </div>
+</footer>
+
+<script src="../../js/site.js"></script>
+</body>
+</html>

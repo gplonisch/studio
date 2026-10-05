@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hartline Electrical - Plonisch Studio</title>
+<meta name="description" content="A case study on designing for someone with no power at eleven at night, where the usual hierarchy of a services site is wrong.">
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="shell">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="../index.html">Plonisch Studio</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../process.html">How it works</a></li>
+        <li><a href="../process.html#plans">Care plans</a></li>
+        <li><a href="../index.html#start">Start a project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="shell shell--narrow">
+    <p class="work__kind">Trades</p>
+    <h1 style="font-size:var(--step-4); margin-top:var(--space-2);">Designing for eleven at night</h1>
+
+    <dl class="case__meta">
+      <div><dt>Type</dt><dd>Domestic and small commercial electrician</dd></div>
+      <div><dt>Palette</dt><dd>Teal on slate</dd></div>
+      <div><dt>Pages</dt><dd>Two</dd></div>
+      <div><dt>Status</dt><dd>Self-directed demo</dd></div>
+    </dl>
+
+    <div class="case__body">
+      <h2>The brief I set myself</h2>
+      <p>One electrician, one van, working across the north of a city. Domestic rewires, consumer units, inspection reports for landlords, and faults.</p>
+
+      <h2>The decision that shaped it</h2>
+      <p>A meaningful share of the people landing on an electrician's website have no power right now. They are on a phone, possibly in the dark, and they are not reading a services page. Everything about the normal hierarchy of a small-business site is wrong for them.</p>
+      <p>So directly under the hero there is one strip that says what counts as an emergency and gives a number to call. It is the only urgent thing on the page, and it earns that position because it is the only thing some visitors need. Everything else, the services, the service area, the credentials, is for the person browsing calmly on a Tuesday.</p>
+
+      <h2>Credentials are the whole sale</h2>
+      <p>Nobody lets a stranger open their consumer unit on the strength of a nice website. The credentials block lists the registration scheme and number, the insurer and cover, and the qualifications with their years, in plain text that a homeowner can take away and check against a public register.</p>
+      <p>Those are placeholders in this build, and the page says so in as many words. A demo that filled them with plausible-looking scheme numbers would be claiming qualifications that do not exist, which is a different kind of problem from a design mistake.</p>
+
+      <h2>Quoting honestly, in the copy</h2>
+      <p>The pricing section says that anything specifiable gets a fixed written quote, that the wall opening up means a re-quote rather than a surprise on the invoice, and that fault-finding is hourly because nobody can quote a fault they have not seen. That last sentence does more for trust than any badge.</p>
+      <div class="callout">
+        <p><strong>The postcode field has a reason given next to it.</strong></p>
+        <p>"So we can tell you straight away whether travel is added." A form that asks for something without saying why reads as data collection. One clause turns it into a courtesy, and it is also what data-minimisation rules expect you to be able to justify.</p>
+      </div>
+
+      <h2>A third palette, on purpose</h2>
+      <p>Trades templates reach for safety yellow on black, which reads as a hazard sign rather than a business. This one is cool slate with a single teal, and the corners are square rather than rounded, because a trade should look solid. It follows the system colour scheme, unlike the restaurant, since somebody finding an electrician at midnight should get whatever their phone is already set to.</p>
+
+      <h2>What I would do differently</h2>
+      <p>There is no way to attach a photograph to the quote form, and photographs are the single most useful thing a customer can send an electrician. A real build wires that up, which means a form handler, a file size limit, and a line in the privacy notice about where the images go.</p>
+      <div class="hero__actions" style="margin-top:var(--space-4);">
+        <a class="btn btn--primary" href="../work/hartline/">See it live</a>
+        <a class="btn btn--ghost" href="../index.html#start">Start a project</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <p class="footer__legal">
+      Hartline Electrical is not a real company. This case study describes a self-directed build, not client work.
+      [BUSINESS NAME], [CONTACT EMAIL].
+    </p>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>
